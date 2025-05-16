@@ -3,6 +3,7 @@
 void read_mat()
 {
     
+    
 }
 void print_mat(mat *MAT)
 {
