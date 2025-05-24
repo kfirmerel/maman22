@@ -4,7 +4,7 @@
 #include <time.h>
 #include <limits.h>
 #include <math.h>
-
+#define MAX_STRING_LENGTH 200
 typedef float mat[4][4];
 
 
@@ -15,3 +15,4 @@ void sub_mat(mat *a, mat *b, mat *c);
 void mul_mat();
 void mul_scalar(mat *a, double scalar, mat *b);
 void trans_mat();
+void remove_tabs(char input[]);

@@ -2,7 +2,7 @@
 
 void read_mat()
 {
-    
+
     
 }
 void print_mat(mat *MAT)
@@ -60,4 +60,33 @@ void mul_scalar(mat *a, double scalar, mat *b)
 void trans_mat()
 {
 
+}
+
+void remove_tabs(char input[])
+{
+    char temp [MAX_STRING_LENGTH]; /* Temporary array to hold the modified string */
+    int i = 0;
+    int counter = 0; /* Iterate through the input string and copy non-tab characters to temp */
+    for (i = 0; i < MAX_STRING_LENGTH; i++)
+    {
+        temp[i] = '\0'; /* Initialize the temporary array */
+    }
+    i = 0; /* Reset index for input string */
+
+    while (input[i] != '\0')
+    {
+        if (input[i] != '\t')
+        {
+            temp[counter] = input[i];
+            i++;
+            counter++;
+        }
+        else
+        {
+            i++;
+        }
+        
+    }
+    temp[counter] = '\0'; /* Null-terminate the string */
+    strcpy(input, temp);
 }
