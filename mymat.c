@@ -90,3 +90,20 @@ void remove_tabs(char input[])
     temp[counter] = '\0'; /* Null-terminate the string */
     strcpy(input, temp);
 }
+char which_mat(char *command)
+{
+    if (strcmp(command, "MAT_A") == 0)
+        return 'A';
+    else if (strcmp(command, "MAT_B") == 0)
+        return 'B';
+    else if (strcmp(command, "MAT_C") == 0)
+        return 'C';
+    else if (strcmp(command, "MAT_D") == 0)
+        return 'D';
+    else if (strcmp(command, "MAT_E") == 0)
+        return 'E';
+    else if (strcmp(command, "MAT_F") == 0)
+        return 'F';
+    else
+        return '0'; /* Invalid matrix identifier */
+}

@@ -16,3 +16,4 @@ void mul_mat();
 void mul_scalar(mat *a, double scalar, mat *b);
 void trans_mat();
 void remove_tabs(char input[]);
+char which_mat(char *command);
